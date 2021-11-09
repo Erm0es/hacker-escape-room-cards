@@ -78,11 +78,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 467px;
+  height: 300px;
   text-align: left;
   font-size: 15px;
   color: #0e0b0b;
   background-color: #a8a7a7;
+  margin-top: 80px;
 }
 
 footer h4 {
@@ -144,26 +145,20 @@ footer .footerBoxthree ul li.follow a {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   margin-top: 30px;
 }
 
-.container .pCcard1 {
+.container .pCcard {
   height: 446px;
   width: 363px;
   margin: 20px;
 }
 
-.container img {
+.container .pCcard img {
   margin-bottom: -5px;
   height: 46%;
   width: 100%;
@@ -172,7 +167,7 @@ footer .footerBoxthree ul li.follow a {
      object-fit: cover;
 }
 
-.container .pCtextBox {
+.container .pCcard .pCtextBox {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 0px 0px 6px 6px;
@@ -180,22 +175,26 @@ footer .footerBoxthree ul li.follow a {
           box-shadow: 0px 0px 6px gray;
 }
 
-.container h3 {
+.container .pCcard h3 {
   margin: 5px 0px;
   font-size: 25px;
 }
 
-.container small {
+.container .pCcard span {
+  color: #8d64ed;
+}
+
+.container .pCcard small {
   margin-left: 150px;
   font-size: 12px;
 }
 
-.container p {
+.container .pCcard p {
   padding: 15px 0px;
   font-size: 15px;
 }
 
-.container .pCbutton {
+.container .pCcard .pCbutton {
   position: relative;
   top: 0px;
   left: 130px;
@@ -205,5 +204,6 @@ footer .footerBoxthree ul li.follow a {
   border-style: none;
   border-radius: 4px;
   font-size: 18px;
+  background-color: #8864ed;
 }
 /*# sourceMappingURL=Style.css.map */
